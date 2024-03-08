@@ -103,15 +103,54 @@ li {
 /* about styles */
 #about {
     background-color: #000000;
+    padding: 0 1rem 1rem;
     color: #DCB646;
     margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 80%;
+    grid-template-rows: 1fr 2fr 1fr;
+    gap: 1rem;
+}
+#about h2 {
+    grid-area: 1 / 1 / span 1 / span 3;
+}
+#about img {
+    width: 90%;
+    /* height: 10rem; */
+    padding: 1rem;
+    grid-area: 1 / 1 / span 3 / 1;
+}
+#about p {
+    text-align: left;
+}
+#about .CTA {
+    grid-area: 3 / 1 / span 1 / span 3;
 }
 
 
 /* projects styles */
 #projects {
     background-color: #ffffff;
+    padding: 1rem;
 }
+#projects .container {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.project {
+    border: .5px solid red;
+    width: 18rem;
+    height: 24rem;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 1rem;
+}
+.project img {
+    height: 16rem;
+}
+
 
 
 /* footer styles */
