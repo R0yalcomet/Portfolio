@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Roy Tisdale</title>
         <link rel="stylesheet" type="text/css" href="./style.css">
+        
     </head>
 
     <body>
@@ -12,12 +13,12 @@
            <h2>Roy Tisdale - Project Portfolio</h2> 
            <nav>
                 <!-- <button>Contact</button> -->
-                <!-- move contact button to banner? -->
-                <button>Menu</button>
+                <button id="menuButton">Menu</button>
                 <ul id="pageNav">
-                    <li>Featured Project</li>
-                    <li>About Me</li>
-                    <li>Projects</li>
+                    <a href="#featureAnchor"><li>Featured Project</li></a>
+                    <a href="#aboutAnchor"><li>About Me</li></a>
+                    <a href="#projectsAnchor"><li>Projects</li></a>
+                    <li id="listButton">Open Projects List</li>
                 </ul>
                 <div id="projectList">
                     <!-- use implicit grid here? -->
@@ -36,6 +37,8 @@
                 <h1>Roy Tisdale</h1>
                 <h2>Front-End Web Developer</h2>
             </section>
+
+            <div id="featureAnchor" class="anchor"></div>
             <section id="feature">
                 <h2>Featured Project</h2>
                 <div class="container">
@@ -45,8 +48,9 @@
                     <p id="tools"><strong>Made With:</strong> HTML, CSS</p>
                     <button>View This Project</button>
                 </div>
-                
             </section>
+
+            <div id="aboutAnchor" class="anchor"></div>
             <section id="about">
                 <h2>About Me</h2>
                 <img src="./resources/Me2.jpg"/>
@@ -57,6 +61,8 @@
                 </div>
                 <button>Contact</button>
             </section>
+
+            <div id="projectsAnchor" class="anchor"></div>
             <section id="projects">
                 <h2>Projects</h2>
                 <div class="container">
@@ -133,4 +139,5 @@
 
         </footer>
     </body>
+    <script src="./main.js"></script>
 </html>
