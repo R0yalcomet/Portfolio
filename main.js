@@ -1,13 +1,22 @@
 let menu = document.getElementById('pageNav');
-let projectList = document.getElementById('projectList');
+let list = document.getElementById('projectList');
 let menuButton = document.getElementById('menuButton');
+let listButton = document.getElementById('listButton');
 
 function menuToggle() {
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
+    menu.classList.toggle('showMenu');
+    list.style.display = 'none';
+}
+
+menuButton.addEventListener('click', menuToggle);
+
+function listToggle() {
+    // list.classList.toggle('showList');
+    if (list.style.display === 'block') {
+        list.style.display = 'none';
     } else {
-        menu.style.display = 'block';
+        list.style.display = 'block';
     }
 }
 
-menuButton.onclick = menuToggle;
+listButton.addEventListener('click', listToggle);
