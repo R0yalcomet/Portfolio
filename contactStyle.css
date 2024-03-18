@@ -1,0 +1,23 @@
+body {
+    height: 60rem;
+    overflow: hidden;
+}
+/* contact styles */
+#contact {
+    background-color: #000000;
+    color: #ffffff;
+    height: auto;
+    padding: 5rem;
+}
+#contact h1 {
+    color: #dcb646;
+}
+#contact h2 {
+    font-size: 2.25rem;
+}
+#contact h3 {
+    font-size: 1.5rem;
+}
+#contact strong {
+    color: #dcb646;
+}

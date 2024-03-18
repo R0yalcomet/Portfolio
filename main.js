@@ -2,21 +2,28 @@ let menu = document.getElementById('pageNav');
 let list = document.getElementById('projectList');
 let menuButton = document.getElementById('menuButton');
 let listButton = document.getElementById('listButton');
+let arrow = document.getElementById('dropDown');
 
 function menuToggle() {
     menu.classList.toggle('showMenu');
-    list.style.display = 'none';
+    listClose();
 }
 
 menuButton.addEventListener('click', menuToggle);
 
+
 function listToggle() {
-    // list.classList.toggle('showList');
     if (list.style.display === 'block') {
-        list.style.display = 'none';
+        listClose();
     } else {
         list.style.display = 'block';
+        arrow.classList.add('collapse');
     }
+}
+
+function listClose() {
+    list.style.display = 'none';
+    arrow.classList.remove('collapse');
 }
 
 listButton.addEventListener('click', listToggle);
