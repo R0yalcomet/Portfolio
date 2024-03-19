@@ -127,6 +127,25 @@ li {
 }
 
 
+@media only screen and (max-width: 900px) {
+    header {
+        height: 5rem;
+    }
+    header h2 {
+        font-size: 1.75rem;
+        width: 14rem
+    }
+    header button {
+        height: 4rem;
+    }
+}
+/* @media only screen and (max-width: 500px) {
+    header button {
+        width: 10rem;
+    }
+} */
+
+
 
 /* footer styles */
 footer {

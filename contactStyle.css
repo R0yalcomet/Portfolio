@@ -1,5 +1,5 @@
 body {
-    height: 60rem;
+    height: 110rem;
     overflow: hidden;
 }
 /* contact styles */
@@ -20,4 +20,11 @@ body {
 }
 #contact strong {
     color: #dcb646;
+}
+
+
+@media only screen and (max-width: 970px) {
+    #contact h1 {
+        font-size: 4rem;
+    }
 }
