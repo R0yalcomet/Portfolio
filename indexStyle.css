@@ -70,10 +70,13 @@
 }
 #feature .container div {
     width: 80%;
+    line-height: 1.5;
+    margin: auto;
 }
 #feature img {
-    height: 20rem;
+    height: 25rem;
     margin: auto;
+    padding: 1rem;
 }
 #feature h3 {
     font-size: 2rem;
@@ -93,13 +96,30 @@
 }
 
 
+@media only screen and (max-width: 1060px) {
+    #feature p {
+        padding: 0;
+    }
+}
 @media only screen and (max-width: 860px) {
+    
     #feature .container {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 1fr auto;
     }
+   
     #feature img {
         grid-row: 1;
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #feature img {
+        height: auto;
+        width: 90%;
+    }
+    #feature button {
+        font-size: 1.25rem;
     }
 }
 
@@ -117,16 +137,18 @@
     color: #DCB646;
 }
 #about img {
-    width: 75%;
+    height: 25rem;
     padding: 1rem;
+    margin: auto;
 }
 #about .container {
     display: grid;
     grid-template-columns: 2fr 5fr;
 }
 #about .container div {
-    padding: 1rem 2rem;
+    padding: 1rem 0;
     width: 80%;
+    margin: auto;
 }
 #about p {
     padding: 1rem;
@@ -146,6 +168,27 @@
 }
 
 
+@media only screen and (max-width: 860px) {
+    #about .container {
+        grid-template-rows: 1fr auto;
+        grid-template-columns: 1fr;
+    }
+    #about p {
+        text-align: center;
+        padding: 1rem 0;
+    }
+    #about img {
+        padding: 0;
+    }
+}
+@media only screen and (max-width: 400px) {
+    #about img {
+        height: auto; 
+        width: 90%;
+    }
+}
+
+
 
 /* projects styles */
 #projects {
@@ -162,15 +205,16 @@
 .project {
     border: 1px solid #DCB646;
     width: 18rem;
-    height: 24rem;
+    height: 25.5rem;
     overflow: hidden;
-    padding: 1rem;
+    padding: 1rem 2rem;
     margin: 1rem;
     background-color: #000000;
     color: #ffffff;
 }
 .project img {
     height: 13.5rem;
+    margin-bottom: 1rem;
 }
 .project button {
     background-color: #DCB646;
@@ -183,3 +227,9 @@
 }
 
 
+@media only screen and (max-width: 1060px) {
+    .project {
+        width: 80%;
+        height: auto;
+    }
+}

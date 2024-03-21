@@ -3,6 +3,7 @@ let list = document.getElementById('projectList');
 let menuButton = document.getElementById('menuButton');
 let listButton = document.getElementById('listButton');
 let arrow = document.getElementById('dropDown');
+let smallMenu = document.getElementById('mobileMenu');
 
 function menuToggle() {
     menu.classList.toggle('showMenu');
@@ -10,7 +11,7 @@ function menuToggle() {
 }
 
 menuButton.addEventListener('click', menuToggle);
-
+smallMenu.addEventListener('click', menuToggle);
 
 function listToggle() {
     if (list.style.display === 'block') {

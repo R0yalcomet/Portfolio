@@ -30,6 +30,14 @@ h2 {
 }
 
 
+@media only screen and (max-width: 860px) {
+    main {
+        width: 95%;
+    }
+}
+
+
+
 /* header styles */
 header {
     background-color: #DCB646;
@@ -64,6 +72,14 @@ button {
     margin-right: 1rem;
     margin-top: .5rem;
 }
+.mobile {
+    display: none;
+}
+#mobileMenu {
+    background-color: unset;
+    width: auto;
+    display: none;
+}
 button:hover {
     box-shadow: inset 0 0 50px #009BDB;
 }
@@ -81,17 +97,18 @@ li {
     background-color: #000000;
     border-left: .1rem solid #000000;
     border-bottom: .1rem solid #000000;
-    border-radius: 0 0 0 30px;
+    border-radius: 0 0 0 20px;
     box-shadow: inset -10px 0 25px #DCB646;
     top: 4rem;
-    right: -20rem;
+    right: -48rem;
     height: fit-content;
     font-size: 1.75rem;
-    padding: 2rem 2rem 0;
+    padding: 1rem 1rem 0;
     transition: transform .25s ease-in-out;
 }
 #pageNav li {
-    margin-bottom: 2rem;
+    display: inline-block;
+    margin-bottom: 1rem;
     border: .5px solid #000000;
     padding: 1rem;
     background-color: #DCB646;
@@ -102,7 +119,7 @@ li {
     color: #000000;
 }
 .showMenu {
-    transform: translateX(-20rem);
+    transform: translateX(-48rem);
 }
 #listButton {
     cursor: pointer;
@@ -115,9 +132,9 @@ li {
 }
 #projectList {
     display: none;
-    top: 28rem;
-    right: 2.05rem;
-    width: 13.5rem;
+    top: 9rem;
+    right: 1rem;
+    width: 12.9rem;
     background-color: #dddddd;
     padding: 0;
 }
@@ -138,12 +155,25 @@ li {
     header button {
         height: 4rem;
     }
-}
-/* @media only screen and (max-width: 500px) {
-    header button {
-        width: 10rem;
+    #pageNav {
+        top: 5rem;
     }
-} */
+    #pageNav li {
+        padding: .5rem;
+    }
+    #projectList li {
+        padding: .4rem;
+    }
+    .mobile {
+        display: inline;
+    }
+    .wide {
+        display: none;
+    }
+    #mobileMenu {
+        display: block;
+    }
+}
 
 
 
