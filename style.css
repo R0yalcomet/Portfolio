@@ -7,14 +7,16 @@
 }
 main {
     position: relative;
-    width: 75%;
+    width: 100%;
     margin: 4rem auto 0;
     padding: 4rem 0;
+    box-shadow: inset 75px 0 200px, inset -75px 0 200px;
 }
 body {
     background-color: #4b4c4d;
     height: auto;
-    box-shadow: inset 75px 0 200px, inset -75px 0 200px;
+    width: 100%;
+
 }
 h1 {
     font-size: 7rem;
@@ -27,13 +29,6 @@ h2 {
     position: relative;
     top: -200px;
     visibility: hidden;
-}
-
-
-@media only screen and (max-width: 860px) {
-    main {
-        width: 95%;
-    }
 }
 
 
@@ -69,7 +64,7 @@ button {
     border: .1px solid #000000;
     font-size: 1.5rem;
     box-shadow: inset 0px -2px 10px #707986;
-    margin-right: 1rem;
+    margin-right: 1.25rem;
     margin-top: .5rem;
 }
 .mobile {
@@ -142,7 +137,9 @@ li {
     border-bottom: .1rem solid #000000;
     padding: .2rem;
 }
-
+section {
+    margin: auto;
+}
 
 @media only screen and (max-width: 900px) {
     header {
@@ -161,6 +158,9 @@ li {
     #pageNav li {
         padding: .5rem;
     }
+    #projectList {
+        width: 11.8rem;
+    }
     #projectList li {
         padding: .4rem;
     }
@@ -172,6 +172,15 @@ li {
     }
     #mobileMenu {
         display: block;
+    }
+}
+@media only screen and (max-width: 350px) {
+    #pageNav {
+        padding: .5rem 0.25rem 0;
+    }
+    #projectList {
+        right: .3rem;
+        top: 8.6rem;
     }
 }
 
