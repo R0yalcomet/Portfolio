@@ -142,27 +142,42 @@ section {
 }
 
 @media only screen and (max-width: 900px) {
+    main {
+        margin-top: 3rem;
+    }
     header {
-        height: 5rem;
+        height: 3rem;
     }
     header h2 {
-        font-size: 1.75rem;
-        width: 14rem
+        font-size: 1rem;
+        width: 8rem
     }
     header button {
-        height: 4rem;
+        height: 2rem;
+        width: auto;
+    }
+    header button img {
+        height: 1.5rem;
     }
     #pageNav {
-        top: 5rem;
+        top: 3rem;
+        font-size: 1rem;
+        padding: .5rem;
     }
     #pageNav li {
         padding: .5rem;
+        margin-bottom: .25rem;
+    }
+    #dropDown {
+        height: .9rem;
     }
     #projectList {
-        width: 11.8rem;
+        width: 7.75rem;
+        right: .5rem;
+        top: 5.75rem;
     }
     #projectList li {
-        padding: .4rem;
+        padding: .2rem;
     }
     .mobile {
         display: inline;
@@ -174,13 +189,27 @@ section {
         display: block;
     }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 500px) {
+    #pageNav {
+        font-size: .65rem;
+        max-width: 95%;
+        border-radius: 0 0 0 .5rem;
+    }
+    #pageNav li {
+        padding: .2rem;
+    }
+    #dropDown {
+        height: .55rem;
+        margin: auto .25rem;
+    }
     #pageNav {
         padding: .5rem 0.25rem 0;
     }
     #projectList {
+        width: 4.7rem;
         right: .3rem;
-        top: 8.6rem;
+        top: 4.7rem;
+        font-size: .65rem;
     }
 }
 
